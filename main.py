@@ -66,6 +66,7 @@ def main():
 
     # Saving the data into the HTML file
     Func.close()
+    print(total_paper)
     return total_paper
 if __name__ == '__main__':
     main()

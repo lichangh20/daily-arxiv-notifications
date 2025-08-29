@@ -12,5 +12,4 @@ REPO_NAME = 'arxiv-papers-daily'
 NEW_SUB_URL = 'https://arxiv.org/list/cs/new'
 
 # Keywords to search
-KEYWORD_LIST = [ "rgb-t tracking", "rgb-thermal", "rgb-thermal-tracking",
-                "rgb-t", "rgbt","rgb-t-fusion-tracking","rgb-tir","RGBT Object Tracking"]
+KEYWORD_LIST = [ "reinforcement learning"]
