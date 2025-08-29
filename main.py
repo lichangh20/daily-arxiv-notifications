@@ -30,11 +30,11 @@ def main():
 
     for i in range(len(dt_list)):
         paper = {}
-        paper_number = dt_list[i].text.strip().split(" ")[2].split(":")[-1]
+        paper_number = dt_list[i+1].text.strip().split("arXiv:")[1].split("\n")[0]
         paper['main_page'] = arxiv_base + paper_number
         paper['pdf'] = arxiv_base.replace('abs', 'pdf') + paper_number
 
-        paper['title'] = dd_list[i].find("div", {"class": "list-title mathjax"}).text.replace("Title: ", "").strip()
+        paper['title'] = dd_list[i].find("div", {"class": "list-title mathjax"}).text.replace("Title:\n", "").strip()
         paper['authors'] = dd_list[i].find("div", {"class": "list-authors"}).text.replace("Authors:\n", "").replace(
             "\n", "").strip()
         paper['subjects'] = dd_list[i].find("div", {"class": "list-subjects"}).text.replace("Subjects: ", "").strip()
