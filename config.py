@@ -12,4 +12,4 @@ REPO_NAME = 'arxiv-papers-daily'
 NEW_SUB_URL = 'https://arxiv.org/list/cs/new'
 
 # Keywords to search
-KEYWORD_LIST = [ "reinforcement learning", "diffusion policy" ]
+KEYWORD_LIST = [ "memory", "long context" ]
